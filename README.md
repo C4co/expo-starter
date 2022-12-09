@@ -1,4 +1,4 @@
-# Export Starter
+# Expo Starter
 
 ### What's inside
 

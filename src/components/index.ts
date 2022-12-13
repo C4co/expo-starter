@@ -1,1 +1,2 @@
-export * from '../components/Button/Button'
+export * from './Button'
+export * from './Gap'

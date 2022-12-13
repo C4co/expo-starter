@@ -3,8 +3,7 @@
 ### What's inside
 
 - Expo
-- Rect Native
-- React Navigation
+- React Native
 
 ---
 

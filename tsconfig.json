@@ -7,7 +7,9 @@
       "@components": ["./src/components/index.ts"],
       "@modules": ["./src/modules/index.ts"],
       "@routes": ["./src/routes/index.ts"],
-      "@styles": ["./src/styles/index.ts"]
+      "@styles": ["./src/styles/index.ts"],
+      "@repositories": ["./src/repositories/index.ts"],
+      "@models": ["./src/models/index.ts"]
     }
   },
   "exclude": ["node_modules"]

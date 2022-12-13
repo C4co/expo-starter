@@ -9,7 +9,8 @@
       "@routes": ["./src/routes/index.ts"],
       "@styles": ["./src/styles/index.ts"],
       "@repositories": ["./src/repositories/index.ts"],
-      "@models": ["./src/models/index.ts"]
+      "@models": ["./src/models/index.ts"],
+      "@server": ["./src/server/index.ts"]
     }
   },
   "exclude": ["node_modules"]

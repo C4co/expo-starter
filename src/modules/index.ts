@@ -1,2 +1,2 @@
-export * from './home/home'
-export * from './settings/settings'
+export * from './home/home.page'
+export * from './settings/settings.page'

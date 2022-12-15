@@ -8,15 +8,15 @@
 ## Layers
 
 ```
-  📂 src
-  ├─ 📁 components
-  ├─ 📁 layouts
-  ├─ 📁 models
-  ├─ 📁 modules
-  ├─ 📁 repositories
-  ├─ 📁 routes
-  ├─ 📁 services
-  ├─ 📁 styles
+📂 src
+├─ 📁 components
+├─ 📁 layouts
+├─ 📁 models
+├─ 📁 modules
+├─ 📁 repositories
+├─ 📁 routes
+├─ 📁 services
+├─ 📁 styles
 ```
 
 **components** - shared components

@@ -15,6 +15,7 @@ module.exports = function (api) {
             '@repositories': './src/repositories/index.ts',
             '@models': './src/models/index.ts',
             '@server': './src/server/index.ts',
+            '@layouts': ['./src/layouts/index.ts'],
           },
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },

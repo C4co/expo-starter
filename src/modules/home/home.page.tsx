@@ -4,6 +4,7 @@ import { styles } from '@styles'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack'
 import { Button } from '@components'
 import { useGetTodos } from '@repositories'
+import { PageLayout } from '@layouts'
 
 type Props = NativeStackScreenProps<any, 'home'>
 
@@ -29,7 +30,7 @@ export function HomeScreen({ navigation }: Props) {
   console.log(data![0].title)
 
   return (
-    <View style={styles.centerContainer}>
+    <PageLayout>
       <Button
         onPress={() => {
           navigation.navigate('settings')
@@ -37,8 +38,7 @@ export function HomeScreen({ navigation }: Props) {
       >
         Settings
       </Button>
-
       <StatusBar style="auto" />
-    </View>
+    </PageLayout>
   )
 }

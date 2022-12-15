@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query'
 import { Todo } from '@models'
-import { todoServer } from '@server'
+import { todoServer } from '@services'
 
 export function useGetTodos() {
   return useQuery<Todo[]>('getText', async () => {

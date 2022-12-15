@@ -13,6 +13,7 @@ const style = StyleSheet.create({
   button: {
     paddingHorizontal: 25,
     paddingVertical: 12,
+    width: '100%',
     backgroundColor: 'black',
     borderRadius: 100,
     display: 'flex',
@@ -23,6 +24,7 @@ const style = StyleSheet.create({
 
   label: {
     color: 'white',
+    fontSize: 18,
   },
 })
 

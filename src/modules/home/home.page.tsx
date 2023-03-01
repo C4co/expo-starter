@@ -31,6 +31,7 @@ export function HomeScreen({ navigation }: Props) {
 
   return (
     <PageLayout>
+      <StatusBar style="auto" />
       <Button
         onPress={() => {
           navigation.navigate('settings')
@@ -38,7 +39,7 @@ export function HomeScreen({ navigation }: Props) {
       >
         Settings
       </Button>
-      <StatusBar style="auto" />
+      <Text> Hello world this is an update </Text>
     </PageLayout>
   )
 }

@@ -41,6 +41,18 @@ run app.
 ```
 npx expo start
 ```
+## Build and update
+
+Create new build
+```
+eas build --profile preview
+```
+
+Update
+```
+eas update --channel preview
+```
+
 ---
 
 Carlos Costa 🍎 2022

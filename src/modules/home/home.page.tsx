@@ -39,7 +39,9 @@ export function HomeScreen({ navigation }: Props) {
       >
         Settings
       </Button>
+
       <Text> Hello world this is an update </Text>
+      <Text> This is a another update </Text>
     </PageLayout>
   )
 }

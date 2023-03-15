@@ -2,8 +2,12 @@
 
 ## What's inside
 
-- Expo
-- React Native
+- 📲 [Expo](https://docs.expo.dev/)
+- 🛠 [React Native](https://reactnative.dev/)
+- 🎭 [Nativewind](https://www.nativewind.dev/)
+- 🧤 [React Query](https://react-query-v3.tanstack.com/)
+- 📡 [Axios](https://axios-http.com/ptbr/docs/intro)
+- 🏄 [React Navigation](https://reactnavigation.org/)
 
 ## Layers
 
@@ -31,7 +35,7 @@
 
 **routes** - routes for modules and pages
 
-**services** - setting for external services
+**services** - settings of internal and external services
 
 **styles** - global styles
 

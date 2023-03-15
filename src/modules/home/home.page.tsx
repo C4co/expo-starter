@@ -1,8 +1,7 @@
 import { StatusBar } from 'expo-status-bar'
 import { View, Text } from 'react-native'
-import { styles } from '@styles'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { Button } from '@components'
+import { Button, Gap } from '@components'
 import { useGetTodos } from '@repositories'
 import { PageLayout } from '@layouts'
 
@@ -13,7 +12,7 @@ export function HomeScreen({ navigation }: Props) {
 
   if (isLoading) {
     return (
-      <View style={styles.centerContainer}>
+      <View>
         <Text> Loading... </Text>
       </View>
     )
@@ -21,27 +20,26 @@ export function HomeScreen({ navigation }: Props) {
 
   if (isError) {
     return (
-      <View style={styles.centerContainer}>
+      <View>
         <Text> Error </Text>
       </View>
     )
   }
 
-  console.log(data![0].title)
-
   return (
     <PageLayout>
       <StatusBar style="auto" />
-      <Button
-        onPress={() => {
-          navigation.navigate('settings')
-        }}
-      >
-        Settings
-      </Button>
-
-      <Text> Hello world this is an update </Text>
-      <Text> This is a another update </Text>
+      <View className="min-h-screen p-3 justify-center items-center">
+        <Button
+          onPress={() => {
+            navigation.navigate('settings')
+          }}
+        >
+          Settings
+        </Button>
+        <Gap height={10} />
+        <Button loading={true}> Loading... </Button>
+      </View>
     </PageLayout>
   )
 }

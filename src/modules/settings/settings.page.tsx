@@ -1,10 +1,12 @@
 import { View, Text } from 'react-native'
-import { styles } from '@styles'
+import { PageLayout } from '@layouts'
 
 export function SettingsScreen() {
   return (
-    <View style={styles.centerContainer}>
-      <Text> Settings </Text>
-    </View>
+    <PageLayout>
+      <View className="justify-center items-center min-h-screen">
+        <Text> Settings </Text>
+      </View>
+    </PageLayout>
   )
 }

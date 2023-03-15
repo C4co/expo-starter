@@ -1,15 +1,9 @@
-import { View, StyleSheet } from 'react-native'
-
-const style = StyleSheet.create({
-  pageLayout: {
-    padding: 10,
-  },
-})
+import { View } from 'react-native'
 
 type PageLayoutProps = {
   children: React.ReactNode
 }
 
 export function PageLayout({ children }: PageLayoutProps) {
-  return <View style={style.pageLayout}>{children}</View>
+  return <View className="bg-white min-h-screen">{children}</View>
 }

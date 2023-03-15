@@ -2,36 +2,33 @@ import {
   Text,
   TouchableOpacity,
   TouchableOpacityProps,
-  StyleSheet,
+  View,
+  ActivityIndicator,
 } from 'react-native'
 
 interface ButtonProps extends TouchableOpacityProps {
   children: string
+  loading?: boolean
 }
 
-const style = StyleSheet.create({
-  button: {
-    paddingHorizontal: 25,
-    paddingVertical: 12,
-    width: '100%',
-    backgroundColor: 'black',
-    borderRadius: 100,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
+export function Button({ children, loading, ...props }: ButtonProps) {
+  if (loading) {
+    return (
+      <View className="px-4 h-[50] bg-black rounded-full justify-center items-center w-full">
+        <ActivityIndicator color="#FFF" />
+      </View>
+    )
+  }
 
-  label: {
-    color: 'white',
-    fontSize: 18,
-  },
-})
-
-export function Button({ children, ...props }: ButtonProps) {
   return (
-    <TouchableOpacity activeOpacity={0.7} style={style.button} {...props}>
-      <Text style={style.label}>{children}</Text>
+    <TouchableOpacity
+      activeOpacity={0.7}
+      className="px-4 h-[50] justify-center items-center bg-black rounded-full w-full"
+      {...props}
+    >
+      <Text className="text-base text-white leading-none text-center">
+        {children}
+      </Text>
     </TouchableOpacity>
   )
 }

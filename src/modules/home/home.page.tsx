@@ -37,8 +37,6 @@ export function HomeScreen({ navigation }: Props) {
         >
           Settings
         </Button>
-        <Gap height={10} />
-        <Button loading={true}> Loading... </Button>
       </View>
     </PageLayout>
   )

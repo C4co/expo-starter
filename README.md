@@ -17,7 +17,6 @@
 ├─ 📁 layouts
 ├─ 📁 models
 ├─ 📁 modules
-├─ 📁 repositories
 ├─ 📁 routes
 ├─ 📁 services
 ├─ 📁 styles
@@ -31,11 +30,9 @@
 
 **modules** - layer to divide features in modules ex: auth, home, settings, chat
 
-**repositories** - get and transform data from services
-
 **routes** - routes for modules and pages
 
-**services** - settings of internal and external services
+**services** - get and mutate data
 
 **styles** - global styles
 

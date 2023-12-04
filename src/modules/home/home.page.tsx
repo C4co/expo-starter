@@ -1,9 +1,10 @@
 import { StatusBar } from 'expo-status-bar'
 import { View, Text } from 'react-native'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { Button, Gap } from '@components'
-import { useGetTodos } from '@repositories'
+import { Button, Gap, Input } from '@components'
+import { useGetTodos } from '@services'
 import { PageLayout } from '@layouts'
+import { AntDesign, MaterialIcons } from '@expo/vector-icons'
 
 type Props = NativeStackScreenProps<any, 'home'>
 
@@ -27,9 +28,9 @@ export function HomeScreen({ navigation }: Props) {
   }
 
   return (
-    <PageLayout>
+    <PageLayout className="bg-white">
       <StatusBar style="auto" />
-      <View className="min-h-screen p-3 justify-center items-center">
+      <View className="min-h-screen p-3">
         <Button
           onPress={() => {
             navigation.navigate('settings')

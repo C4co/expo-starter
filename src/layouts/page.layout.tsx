@@ -1,9 +1,24 @@
-import { View } from 'react-native'
+import { View, KeyboardAvoidingView, ScrollView, ViewProps } from 'react-native'
 
-type PageLayoutProps = {
+interface PageLayoutProps extends ViewProps {
   children: React.ReactNode
+  scrolable?: boolean
 }
 
-export function PageLayout({ children }: PageLayoutProps) {
-  return <View className="bg-white min-h-screen">{children}</View>
+export function PageLayout({ children, scrolable, ...props }: PageLayoutProps) {
+  if (scrolable) {
+    return (
+      <KeyboardAvoidingView>
+        <ScrollView>
+          <View {...props}>{children}</View>
+        </ScrollView>
+      </KeyboardAvoidingView>
+    )
+  }
+
+  return (
+    <KeyboardAvoidingView>
+      <View>{children}</View>
+    </KeyboardAvoidingView>
+  )
 }

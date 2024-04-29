@@ -22,37 +22,13 @@
 ├─ 📁 styles
 ```
 
-**components** - shared components
-
-**layouts** - layouts for pages
-
-**models** - entities
-
-**modules** - layer to divide features in modules ex: auth, home, settings, chat
-
-**routes** - routes for modules and pages
-
-**services** - get and mutate data
-
-**styles** - global styles
-
-## Commands
-
-run app.
-```
-npx expo start
-```
-## Build and update
-
-Create new build
-```
-eas build --profile preview
-```
-
-Update
-```
-eas update --channel preview
-```
+- **components** - shared components
+- **layouts** - layouts for pages
+- **models** - entities
+- **modules** - layer to divide features in modules ex: auth, home, settings, chat
+- **routes** - routes for modules and pages
+- **services** - get and mutate data
+- **styles** - global styles
 
 ---
 

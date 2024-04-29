@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar'
 import { View, Text } from 'react-native'
 import type { NativeStackScreenProps } from '@react-navigation/native-stack'
-import { Button, Gap, Input } from '@components'
+import { Button, Input, Gap } from '@components'
 import { useGetTodos } from '@services'
 import { PageLayout } from '@layouts'
-import { AntDesign, MaterialIcons } from '@expo/vector-icons'
+import { Feather } from '@expo/vector-icons'
 
 type Props = NativeStackScreenProps<any, 'home'>
 
@@ -28,9 +28,9 @@ export function HomeScreen({ navigation }: Props) {
   }
 
   return (
-    <PageLayout className="bg-white">
+    <PageLayout>
       <StatusBar style="auto" />
-      <View className="min-h-screen p-3">
+      <View className="min-h-screen p-3 bg-white">
         <Button
           onPress={() => {
             navigation.navigate('settings')
@@ -38,6 +38,20 @@ export function HomeScreen({ navigation }: Props) {
         >
           Settings
         </Button>
+
+        <Gap height={10} />
+
+        <Input
+          label="Search"
+          placeholder="Search"
+          leftIcon={<Feather name="search" size={20} color="#000" />}
+        />
+        <Gap height={10} />
+        <Input
+          label="Search"
+          placeholder="Search"
+          errorMessage="Please enter a valid email."
+        />
       </View>
     </PageLayout>
   )

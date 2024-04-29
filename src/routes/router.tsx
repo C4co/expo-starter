@@ -19,12 +19,18 @@ export function Router() {
       <Stack.Navigator screenOptions={{ headerShadowVisible: false }}>
         <Stack.Screen
           name="home"
-          options={{ title: 'Expo starter', ...customHeader }}
+          options={{
+            title: 'Expo starter',
+            ...customHeader,
+          }}
           component={HomeScreen}
         />
 
         <Stack.Screen
-          options={{ title: 'Settings', ...customHeader }}
+          options={{
+            title: 'Settings',
+            ...customHeader,
+          }}
           name="settings"
           component={SettingsScreen}
         />

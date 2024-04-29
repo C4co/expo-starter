@@ -27,8 +27,7 @@ export function Input({
         {leftIcon && <View className="ml-[10px]">{leftIcon}</View>}
         <TextInput
           {...props}
-          style={{ paddingLeft: 15 }}
-          className={`py-[7px] text-[16px] flex-1 focus:border-blue-500`}
+          className={`py-2 px-4 text-[16px] flex-1 focus:border-blue-500`}
         />
         {rightIcon && <View className="mr-[10px]">{rightIcon}</View>}
       </View>
